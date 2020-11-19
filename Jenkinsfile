@@ -3,7 +3,9 @@ pipeline {
   stages {
     stage('paso1') {
       steps {
-        sh 'ng serve'
+        sh '''npm install -g @angular/cli
+npm install
+ng build --prod'''
       }
     }
 
